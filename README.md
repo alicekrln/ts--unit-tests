@@ -24,7 +24,7 @@ Denna uppgift innehåller en rad funktioner som saknar unit-tester. Studera funk
 
 4. **Kör testerna**
 
-   - Skriv `npm run test` eller installera Vitest-tillägget för VS Code och tryck på de runda symbolerna/play-knappen längst till vänster på samma rad som `describe()` eller `test()`
-     - Man kan wrappa alla test i en och samma fil i en `describe()`. Detta kallas för en "test suite"
+   - Skriv `npm run test` eller installera Vitest-tillägget för VS Code och tryck på de runda symbolerna/play-knappen längst till vänster på samma rad som `suite()` eller `test()`
+     - Man kan wrappa flera test i en så kallad "test suite" med metoden `suite()`. Detta är användbart när man har skapat flera test för en och samma funktion men vill ha en läsbar och städad utskrift av testresultatet.
      - Man kan inkludera filnamnet i NPM-kommandot om man bara vill köra en specifik testfil - Exempelvis `npm run test utils`
      - Du kan alltså välja att köra alla test-filer i hela projektet, en "test suite" av flera test eller ett specifikt test
