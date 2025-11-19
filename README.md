@@ -10,6 +10,7 @@ Denna uppgift innehåller en rad funktioner som saknar unit-tester. Studera funk
    - Installera dev dependencyn `vitest`
    - Lägg till skriptet `"test": "vitest --watch"`
      - Med eller utan watch-flaggan beroende på om du vill att testerna körs om varje gång du sparar en ändring.
+     - Om det redan finns ett testskript ersätter man bara dess värde med `"vitest --watch"`
 
 2. **Funktionerna**
 
@@ -18,6 +19,11 @@ Denna uppgift innehåller en rad funktioner som saknar unit-tester. Studera funk
 3. **Unit tests**
 
    - Skapa en mapp direkt i rotmappen som heter `tests`
-   - Skapa test-filer med samma filnamn som funktionerna de testar och lägg till `.test` innan `.ts` - Om filen heter `utils.ts` ska testfilen heta `utils.test.ts`.
+   - Skapa test-filer med samma filnamn som funktionerna de testar och lägg till `.test` innan `.ts` - Om filen heter `utils.ts` ska testfilen heta `utils.test.ts`
 
-**_Vitest extension i VS Code_**
+4. **Kör testerna**
+
+   - Skriv `npm run test` eller installera Vitest-tillägget för VS Code och tryck på de runda symbolerna/play-knappen längst till vänster på samma rad som `describe()` eller `test()`
+     - Man kan wrappa alla test i en och samma fil i en `describe()`. Detta kallas för en "test suite"
+     - Man kan inkludera filnamnet i NPM-kommandot om man bara vill köra en specifik testfil - Exempelvis `npm run test utils`
+     - Du kan alltså välja att köra alla test-filer i hela projektet, en "test suite" av flera test eller ett specifikt test
