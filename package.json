@@ -1,0 +1,25 @@
+{
+  "name": "ts--unit-tests",
+  "version": "1.0.0",
+  "description": "Denna uppgift innehåller en rad funktioner som saknar unit-tester. Studera funktionerna noga och skapa där efter tester som säkrar att de fungerar som förväntat. Att de returnerar det användaren förväntar sig att de returnerar, att de hanterar eventuella falsy värden m.m.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicekrln/ts--unit-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/alicekrln/ts--unit-tests/issues"
+  },
+  "homepage": "https://github.com/alicekrln/ts--unit-tests#readme",
+  "devDependencies": {
+    "jsdom": "^27.2.0",
+    "vitest": "^4.0.13"
+  }
+}
